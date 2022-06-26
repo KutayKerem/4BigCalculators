@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FenerbahceStopwatch">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fb4" />
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#EDBC04"
+        android:onClick="back"
+        android:text="Geri"
+        android:textSize="8sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stop"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#EDBC04"
+        android:onClick="stop"
+        android:text="durdur"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/back"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:backgroundTint="#EDBC04"
+        android:onClick="clear"
+        android:text="SIFIRLA"
+        android:textSize="8sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stop"
+        app:layout_constraintEnd_toStartOf="@+id/stop"
+        app:layout_constraintStart_toEndOf="@+id/basla"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/basla"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="#EDBC04"
+        android:onClick="start"
+        android:text="basla"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/clear"
+        app:layout_constraintEnd_toStartOf="@+id/clear"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/followed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="345dp"
+        android:backgroundTint="#EDBC04"
+        android:textAlignment="center"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

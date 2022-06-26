@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fenerbahce">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#B8BD1F"
+        android:onClick="back"
+        android:text="Geri"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sayac2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/sayac2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/sayac2"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#B8BD1F"
+        android:onClick="counterfb"
+        android:text="Sayaç"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hesap"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#B8BD1F"
+        android:onClick="stopwatch"
+        android:text="Kronometre"
+        android:textSize="8sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/back"
+        app:layout_constraintStart_toEndOf="@+id/sayac2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/hesap"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="215dp"
+        android:backgroundTint="#B8BD1F"
+        android:onClick="accountfb"
+        android:text="Hesap"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sayac2"
+        app:layout_constraintEnd_toStartOf="@+id/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sayac2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/fenerbahce"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fb2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="248dp"
+        android:layout_height="65dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fenerbahce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
